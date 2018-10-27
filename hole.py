@@ -21,16 +21,17 @@ D R A O D has one hole hence total number of holes in the text is 5.
 '''
 def calculate(s,c):
     if c=='A' or c=='O' or c=='P' or c=='Q' or c=='R' or c=='D' :
-        return (s+1)
+        return (s+20)
     elif c=='B':
-        return (s+2)
+        return (s+30)
     else:
         return s  
 
-def holes():   
-    str1=input("Enter String: ")
-    s=0
-    for i in range(len(str1)):
-        c=str1[i]
-        s=calculate(s,c)
-    print(s)
+def holes():
+    for i in range(5):    
+        str1=input("Enter String: ")
+        s=10
+        for i in range(len(str1)):
+            c=str1[i]
+            s=calculate(s,c)
+        print(s)
